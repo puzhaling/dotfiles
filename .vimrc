@@ -1,5 +1,5 @@
-" turn off syntax highlighting
-syntax on 
+" turn on/off syntax highlighting
+syntax off 
 
 " new lines inherit the indentation of previous lines
 set autoindent
@@ -25,15 +25,17 @@ set cmdheight=1
 " show line numbers on the left
 set nu 
 
-set autoindent 
-
 " briefly show matching bracket after inserting last one
 set showmatch
 
+" set left padding for line numbers
+set numberwidth=4
+
+" not display status line for single opened window;
+" set equal 2 to display always
+set laststatus=1
+
+" resize windows equally after splitting or closing
+set equalalways
+
 set shiftwidth=2
-
-
-" maps
-map nb /[{}()]   
-map pb ?[{}()]
-map comm I/* A */
