@@ -1,0 +1,13 @@
+#object files
+*.out
+*.exe
+
+#hidden files
+.*
+
+#testing file
+TEST.*
+
+#emacs autosave and buckup files
+*~
+\#*#
