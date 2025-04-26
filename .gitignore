@@ -2,9 +2,6 @@
 *.out
 *.exe
 
-#hidden files
-.*
-
 #emacs autosave and backup files
 *~
 \#*#
