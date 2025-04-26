@@ -5,9 +5,6 @@
 #hidden files
 .*
 
-#testing file
-TEST.*
-
-#emacs autosave and buckup files
+#emacs autosave and backup files
 *~
 \#*#

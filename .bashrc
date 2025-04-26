@@ -1,6 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -100,14 +101,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-
-export EDITOR=/usr/bin/vim
-export PS1='[\u@\h-\t]\$: '
-alias c='clear'
-alias i3config='vim ~/Desktop/repos/dotfiles/.i3/config'
-alias bashconfig='vim ~/Desktop/repos/dotfiles/.bashrc'
-alias godots='cd ~/Desktop/repos/dotfiles'
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -119,7 +112,6 @@ if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
-    . /etc/bash
-_completion
+    . /etc/bash_completion
   fi
 fi

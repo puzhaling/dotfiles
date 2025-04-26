@@ -5,10 +5,10 @@ syntax off
 set autoindent
 
 " converts tabs to spaces
-set expandtab
+" set expandtab
 
-" 1 tab == 2 spaces
-set tabstop=2
+" 1 tab == 8 spaces
+set tabstop=8
 
 " use an encoding that supports unicode
 set encoding=utf-8
@@ -38,4 +38,4 @@ set laststatus=1
 " resize windows equally after splitting or closing
 set equalalways
 
-set shiftwidth=2
+set shiftwidth=8
